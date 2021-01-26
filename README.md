@@ -11,5 +11,5 @@ For this project I will be creating an app that uses the following
 The porject is to create an app using react that will use an API to fetch user's credt scores. The app itself will help connect users with an agent to help them dispute and improve their credit scores, as well as gain additional knowledge and information.
 
 <script>
-    <img src='./CSLogo.png'>
+    <img src='./src/CSLogo.png'>
 </script>
