@@ -1,18 +1,15 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import logo from './CSlogo.png'
+import logo from '../CSlogo.png'
 
 
-const landingpage = () => {
+export default function landingPage (){
     return (
-        <div className="header">
+        <div className="landingPage">
+            
             <h1> Credit Sharks LLC</h1>
-            <nav>
-                <button className="navigation">
-                    Menu
-                </button>
-            </nav>
-                <div className="landingpage" max-width='200%'>
+           
+                <div className="landingPageContainer" max-width='200%'>
                     <img src ={logo} alt='logo' width = '150%'
                     
                     />
@@ -30,4 +27,4 @@ const landingpage = () => {
     )
 }
 
-export default landingpage
+
