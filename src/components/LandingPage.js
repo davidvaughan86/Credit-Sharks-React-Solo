@@ -1,27 +1,34 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import logo from '../CSlogo.png'
+import logo from '../images/CSlogo.png'
+
 
 
 export default function landingPage (){
     return (
-        <div className="landingPage">
+        // <div className="landingPage">
             
-            <h1> Credit Sharks LLC</h1>
+            
            
-                <div className="landingPageContainer" max-width='200%'>
-                    <img src ={logo} alt='logo' width = '150%'
+                <div className="player-wrapper">
+                    
+                    <img src ={logo} alt='logo' width = '100%' top ='80%'
                     
                     />
-                    <div className="youtube">
+                    
                         <ReactPlayer
-                        url = 'https://www.youtube.com/watch?v=rMeXmFkwLHs'
+                        url = 'https://www.youtube.com/watch?v=rMeXmFkwLHs' 
+                        className="react-player"
+                        
+                        width="100%"
+                        height="100%"
+                        controls={false}
                         >
                             Credit Repair
                         </ReactPlayer>
-                    </div>
+                    
                 </div>
-        </div>
+        // </div>
         
         
     )

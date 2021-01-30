@@ -1,4 +1,5 @@
 
+import './componentCSS/buttonCSS.css'
 import './App.css';
 import LandingPage from './components/LandingPage'
 import {
@@ -14,18 +15,20 @@ function App() {
   return (
     <Router>
     <div className="App">
-    <Header />
-        <Swith>
-          <Route path ='/'>
-          <LandingPage />
-          </Route>
+
+    <Header style={{backgroundColor:'grey'}}/>
+    <Switch>
+      <Route path ='/'exact>
+        <LandingPage />
+      </Route>
+      
             
              
           
 
 
 
-        </Swith>
+    </Switch>
       
 
 

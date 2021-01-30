@@ -5,4 +5,52 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body {
+  background-color: whitesmoke;
+}
+Header {
+  background-color: grey;
+}
+.bm-overlay{
+  background-color: grey;
+}
+.player-wrapper {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto; 
+  height: auto; 
+}
+.react-player {
+  border: 10px solid rgb(175, 20, 20);
+  
+  padding-top: 0%;
+  padding-bottom: 60%;
+  
+  position: relative;
+  height: 100%; 
+}
+
+.react-player > div {
+  position: absolute; 
+}
+
+
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+}
+
 
