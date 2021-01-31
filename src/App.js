@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header'
 import Products from './components/Products'
+import Registration from './components/Registration'
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       </Route>
       <Route path ='/packages'>
         <Products />
+      </Route>
+      <Route path ='/registration'>
+        <Registration />
       </Route>
 
       

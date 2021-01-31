@@ -35,8 +35,6 @@ const productData = [
 
 
 
-
-
 export default function products () {
     return (
         <div className="productPage">
