@@ -9,6 +9,7 @@ import {
   Link
 } from 'react-router-dom';
 import Header from './components/Header'
+import Products from './components/Products'
 
 
 function App() {
@@ -16,11 +17,15 @@ function App() {
     <Router>
     <div className="App">
 
-    <Header style={{backgroundColor:'grey'}}/>
+    <Header />
     <Switch>
       <Route path ='/'exact>
         <LandingPage />
       </Route>
+      <Route path ='/packages'>
+        <Products />
+      </Route>
+
       
             
              

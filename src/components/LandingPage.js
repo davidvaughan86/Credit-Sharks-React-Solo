@@ -15,9 +15,22 @@ export default function landingPage (){
                     <img src ={logo} alt='logo' width = '100%' top ='80%'
                     
                     />
-                    
+                    <h6>WE ATTACK BAD CREDIT</h6>
+                    <div class="button_cont" 
+                            align="center">
+                            <a 
+                            class="example_f" 
+                            href="add-website-here" 
+                            target="_blank" 
+                            rel="nofollow"
+                            >
+                        <span>
+                            YES I WANT FINANCIAL FREEDOM
+                        </span>
+                        </a>
+                    </div>
                         <ReactPlayer
-                        url = 'https://www.youtube.com/watch?v=rMeXmFkwLHs' 
+                        url = 'https://www.youtube.com/watch?v=54ynZ6p8nR4&feature=youtu.be' 
                         className="react-player"
                         
                         width="100%"

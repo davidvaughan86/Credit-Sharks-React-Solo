@@ -8,9 +8,29 @@
 body {
   background-color: whitesmoke;
 }
-Header {
-  background-color: grey;
+
+
+
+.header{
+  position: sticky;
+  top:100px;
+  
+  
+  text-align: center;
 }
+
+
+.productFrame {
+  max-width: 75%;
+}
+.productFrame img {
+  width: 100%
+}
+  
+.products {
+  margin-top: 25%;
+}
+
 .bm-overlay{
   background-color: grey;
 }
@@ -24,10 +44,10 @@ Header {
   height: auto; 
 }
 .react-player {
-  border: 10px solid rgb(175, 20, 20);
   
-  padding-top: 0%;
-  padding-bottom: 60%;
+  
+  padding-top: 5%;
+  padding-bottom: 41%;
   
   position: relative;
   height: 100%; 
@@ -53,4 +73,78 @@ Header {
   top: 50px;
 }
 
+.example_b {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #60a3bc;
+  padding: 10px;
+  border-radius: 60px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
 
+.example_b:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+.leadsButton {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #60a3bc;
+      padding: 10px;
+      border-radius: 60px;
+      display: inline-block;
+      border: none;
+      transition: all 0.4s ease 0s;
+      text-align: center;
+      margin-top: 15%
+}
+    
+.leadsButton:hover {
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+}
+
+.example_f {
+  border-radius: 4px;
+  background: linear-gradient(to right, #b2c3ca, #4ca2cb, #b7c8cf) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 18px;
+  width: 175px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+.example_f span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.example_f span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.example_f:hover span {
+  padding-right: 25px;
+}
+.example_f:hover span:after {
+  opacity: 1;
+  right: 0;
+}
