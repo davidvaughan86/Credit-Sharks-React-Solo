@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-
+import '../App.css'
 
 
 export default function Registration (props) {
@@ -14,101 +14,102 @@ export default function Registration (props) {
 
 
     return (
+        <div className="container">
+            <div className="leadsForm">
+                <section >
+                {/* <h1>Learn More
+                    _____________________
+                    "We Attack Bad Credit"
+                </h1> */}
+                <form
+                onSubmit= {(e) => {
+                    e.preventDefault()
+                    const leadsObject = {
+                        name,
+                        lastName,
+                        emailAdress,
+                        phone, 
+                        comments,
+                    }
+                    props.onSubmit(leadsObject)
+                    setName('')
+                    setLastName('')
+                    setEmailAdress('')
+                    setPhone('')
+                    setComments('')
+                    
+                }}>
+                    <label>
+                        Name:
+
+                        <input
+                        placeholder ="please enter your name"
+                        value={name}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                        }}
+                        />
+                    </label>
+                    <label>
+                        Last Name:
+
+                        <input
+                        placeholder ="please enter your last name"
+                        value={lastName}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                        }}
+                        />
+                    </label>
+                    <label>
+                        Email:
+
+                        <input
+                        placeholder ="please enter your email"
+                        value={emailAdress}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                        }}
+                        />
+                    </label>
+                    <label>
+                        Phone:
+
+                        <input
+                        placeholder ="please enter your phone number"
+                        value={comments}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                        }}
+                        />
+                    </label>
+                    <label>
+                        Comments:
+
+                        <input
+                        placeholder ="anything you'd like to add?(Optional)"
+                        value={name}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                        }}
+                        />
+                    </label>
+                    <input type = "submit"
+                        value="Submit"
+
+                        />
+
+                    
 
 
-        <section className="leadsForm">
-            <h1>Learn More
-                _____________________
-                "We Attack Bad Credit"
-            </h1>
-            <form
-            onSubmit= {(e) => {
-                e.preventDefault()
-                const leadsObject = {
-                    name,
-                    lastName,
-                    emailAdress,
-                    phone, 
-                    comments,
-                }
-                props.onSubmit(leadsObject)
-                setName('')
-                setLastName('')
-                setEmailAdress('')
-                setPhone('')
-                setComments('')
+
+
+                </form>
+                    
                 
-            }}>
-                <label>
-                    Name:
-
-                    <input
-                    placeholder ="please enter your name"
-                    value={name}
-                    onChange={(e) => {
-                        setName(e.target.value)
-                    }}
-                    />
-                </label>
-                <label>
-                    Last Name:
-
-                    <input
-                    placeholder ="please enter your last name"
-                    value={lastName}
-                    onChange={(e) => {
-                        setName(e.target.value)
-                    }}
-                    />
-                </label>
-                <label>
-                    Email:
-
-                    <input
-                    placeholder ="please enter your email"
-                    value={emailAdress}
-                    onChange={(e) => {
-                        setName(e.target.value)
-                    }}
-                    />
-                </label>
-                <label>
-                    Phone:
-
-                    <input
-                    placeholder ="please enter your phone number"
-                    value={comments}
-                    onChange={(e) => {
-                        setName(e.target.value)
-                    }}
-                    />
-                </label>
-                <label>
-                    Comments:
-
-                    <input
-                    placeholder ="anything you'd like to add?(Optional)"
-                    value={name}
-                    onChange={(e) => {
-                        setName(e.target.value)
-                    }}
-                    />
-                </label>
-                <input type = "submit"
-                    value="Submit"
-
-                    />
-
-                  
-
-
-
-
-            </form>
-                
-            
-
-
-        </section>
+                </section>       
+            </div> 
+        </div>          
+        
     )
 }
