@@ -16,11 +16,11 @@ import 'semantic-ui-css/semantic.min.css'
 import ThankYou from './components/ThankYou'
 import ContactUs from './components/Email'
 import {useState, useEffect} from 'react'
-import CheckoutForm from './components/Checkout'
+
 import MyCart from './components/MyCart'
 import {loadStripe} from '@stripe/stripe-js'
 import { Elements } from "@stripe/react-stripe-js";
-
+import CheckoutForm from './components/Checkout'
 
 
 
@@ -57,8 +57,8 @@ function App() {
       <Route path ='/myCart'>
         <MyCart cart={cart} />
       </Route>
-      <Elements stripe ={stripePromise}>
-        <CheckoutForm cart={cart}/>
+      <Elements >
+        <CheckoutForm cart={cart} stripe ={stripePromise}/>
       </Elements>
       <Route path ='/thanks'>
         <ThankYou />
