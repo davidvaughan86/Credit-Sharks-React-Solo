@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import logo from '../images/CSlogo.png'
-
+import logo from './CSlogo.png'
+import {Link} from 'react-router-dom'
 
 
 export default function landingPage (){
@@ -16,19 +16,17 @@ export default function landingPage (){
                     
                     />
                     <h6>WE ATTACK BAD CREDIT</h6>
-                    <div class="button_cont" 
-                            align="center">
-                            <a 
-                            class="example_f" 
-                            href="add-website-here" 
-                            target="_blank" 
-                            rel="nofollow"
-                            >
-                        <span>
-                            YES I WANT FINANCIAL FREEDOM
-                        </span>
-                        </a>
-                    </div>
+                    
+                    <Link to={'/registration'}>
+                                    <span class="example_f" 
+                                            align="center" 
+                                            >
+                                
+                                            YES I WANT FINANCIAL FREEDOM 
+                                    </span>
+                            
+                                
+                                </Link>
                         <ReactPlayer
                         url = 'https://www.youtube.com/watch?v=54ynZ6p8nR4&feature=youtu.be' 
                         className="react-player"
