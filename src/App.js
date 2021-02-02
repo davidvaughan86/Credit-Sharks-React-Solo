@@ -57,9 +57,9 @@ function App() {
       <Route path ='/myCart'>
         <MyCart cart={cart} />
       </Route>
-      <Route path ='/checkout'>
+      <Elements stripe ={stripePromise}>
         <CheckoutForm cart={cart}/>
-      </Route>
+      </Elements>
       <Route path ='/thanks'>
         <ThankYou />
       </Route>
