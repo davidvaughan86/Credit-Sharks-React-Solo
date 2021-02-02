@@ -5,7 +5,8 @@ import {
   useElements
 } from "@stripe/react-stripe-js";
 import '../componentCSS/checkout.css'
-
+import {loadStripe} from '@stripe/stripe-js'
+import { Elements } from "@stripe/react-stripe-js";
 
 export default function CheckoutForm() {
   const [succeeded, setSucceeded] = useState(false);
