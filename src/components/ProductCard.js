@@ -15,7 +15,7 @@ export default function ProductCard(props) {
             <p>{props.price}</p>
             <p>{props.description}</p>
             <img src={props.url} alt={props.title} onClick={(e) => {
-                handlecClick()
+                handleClick()
             }}
             />
 

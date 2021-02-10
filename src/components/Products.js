@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from './ProductCard'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 const productData = [
     {
@@ -12,9 +13,7 @@ const productData = [
         url: '/ConsultationShark.png',
         title: 'Free Consultation - Contact Us Today!',
         price: '$0',
-        
-
-        
+                
     },{
         url: '/WhaleShark.png',
         title: 'Whale Shark Payment Plan Package - $79 to Start Today!',
@@ -46,18 +45,21 @@ const productData = [
 
 
 
-export default function products (props) {
+export default function Products (props) {
+    const history = useHistory();
     return (
         <div className="productPage">
            
             <div className="products">
-            <Link to={'/email'}>
+            <button onClick={(e) => {
+                history.push('/email')
+            }}>
                     <span class="leadsButton" 
                     
                     >
                         Learn More
                     </span>
-            </Link>
+            </button>
                 <h1>All Products</h1>
                 {
                     productData.map(i => <ProductCard 

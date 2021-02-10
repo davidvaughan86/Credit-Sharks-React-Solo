@@ -26,7 +26,11 @@ body {
 .productFrame img {
   width: 100%
 }
+.productPage {
+  padding: 50px;
   
+}
+
 .products {
   margin-top: 25%;
   text-align: center;
@@ -159,38 +163,48 @@ body {
   
   
   align-items: center;
+  max-width: 100%;
+  
+}
+
+.checkOutContainer { 
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
-  
+  text-align: center;
+
+}
+
+
+
+.productCheckOut {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-content: center;
+  text-align: center;
+  margin-left: 20%;
+}
+.checkoutInfo {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  align-content: center;
+  text-align: center;
+}
+
+menu {
+  background-color:  #4ca2cb;
+  text-decoration-color: white;
 }
 
 
 
 
-form {
-  
-    
-    margin-top: 25vh;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .inputContainer {
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
   height: 100px;
-}
-
-input {
-  padding: 20px;
-  width: 200px;
-  margin: 1px
-  
-}
-@media only screen and (max-width: 600px) {
-      body {
-  width: 80vw;
-}
 }

@@ -25,7 +25,7 @@ import CheckoutForm from './components/Checkout'
 
 
 function App() {
-  const stripePromise= loadStripe('sk_test_51IGFn2AqeHzkXuKGXB7h7VdT2mAbcAR6EH4WTNydN50253z8Jx2rZQotbLpCfSYn3zKnQ4qRm3CDlDmGdmKxHu9d00HLbiWRog')
+  const stripePromise= loadStripe('pk_test_51IGFn2AqeHzkXuKGf9dQWsKmvh5LBub4xPBSrwfYDrfS30SlGrHerouKQjHff0XcS34fIMWkCxgpjjeMaSxs987q00wjAP9AkW')
   const [cart, setCart] = useState([])
   function addToCart (item) {
     setCart ([...cart,
@@ -57,9 +57,11 @@ function App() {
       <Route path ='/myCart'>
         <MyCart cart={cart} />
       </Route>
-      <Elements >
-        <CheckoutForm cart={cart} stripe ={stripePromise}/>
+      <Route path ='/checkout'>
+      <Elements stripe ={stripePromise}>
+        <CheckoutForm cart={cart} />
       </Elements>
+      </Route>
       <Route path ='/thanks'>
         <ThankYou />
       </Route>
